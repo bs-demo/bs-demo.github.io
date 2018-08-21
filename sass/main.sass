@@ -1,0 +1,408 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+#mainHeader 
+	margin-top: 35px
+
+
+.main-header 
+	ul 
+		li
+	 		display: inline-block
+	 		padding-left: 41px
+	 		float: right
+	 		font-family: Montserrat-Medium
+			 a 
+			  text-decoration: none
+			  text-transform: uppercase
+			  color: #999
+			  font-size: 14px
+
+.gtc0Set
+	margin-left: 0
+	padding-left: 0
+
+.gtcoNav
+	margin-bottom: 138px
+
+
+
+.gtcoCareers h1 
+	font-size: 51px
+	font-family: Montserrat-Regular
+	margin-bottom: -13px
+	
+	
+.gtcoCareers p 
+	font-size: 19px
+	font-family: Montserrat-Light
+	margin-bottom: 105px
+
+.gtco0
+	margin-left: 84px
+
+
+.headerImg
+	margin-bottom: 150px
+
+#careersContinue
+	color: #333
+
+.gtcoSetting
+	font-size: 16px
+	font-family: Montserrat-Medium
+
+.myCareers
+	margin-top: 60px
+
+.myCareers h2 
+	font-size: 38px
+	font-family: Montserrat-Regular
+	p 
+	 font-size: openSans
+
+.secondCol
+	border: 1px solid #000
+	height: 358px
+	width: 392px
+	margin-left: 74px
+
+.fa-feather-alt
+	font-size: 50px
+	margin-top: 78px
+	color: #333333
+
+.gtcoSocial
+	font-size: 21px
+	padding-top: 32px
+
+.thirdCol
+	border: solid 1px #000
+	margin-left: 31px
+
+.fa-drafting-compass
+	font-size: 46px
+	margin-top: 78px
+	color: #333333
+
+.gtcoProduct
+	font-size: 21px
+	padding-top: 32px
+
+#office
+	margin-top: 151px
+	background: #f9fafc
+	height: 640px
+	
+	
+#office figure.ourOffice
+	position: relative
+	overflow: hidden
+	float: left
+
+
+.imageOffice
+	position: relative
+	width: 75%
+	overflow: hidden
+	right: -17%
+	float: right
+	z-index: 1
+	transform: skewX(-15deg)
+
+.imageOffice img 
+	position: relative
+	left: -22%
+	max-width: 100%
+	transform: skewX(15deg)
+
+figure.ourOffice figcaption 
+  height: 100%
+  margin: 0
+  position: absolute
+  width: 100%
+  z-index: 1
+
+.ourOffice figcaption p 
+	font-size: 16px
+	font-family: Montserrat-Medium
+
+.ourOffice figcaption	h3
+	font-size: 38px
+	Montserrat-Regular
+	padding: 0
+	margin: -20px
+
+.ourOffice figcaption
+	padding: 203px 0 0 84px
+	transition: all ease-in-out .2s
+
+figure.ourOffice:hover figcaption 
+  background: #f9f9f9
+
+.play
+	font-size: 80px
+	color: #35cc62
+	cursor: pointer
+	transition: all ease-in-out .2s
+
+.play:hover 
+	color: #c4302b
+	
+.draw , .ourWelfare
+	margin-top: 148px
+
+
+.gtcoWel
+	font-size: 16px
+	Montserrat-Medium
+	text-transform: uppercase
+
+.ourWelfare h4
+	font-size: 38px
+	font-family: Montserrat-Regular
+
+.gtcoNemo
+	font-size: 16px
+	font-family: OpenSans
+
+.gtcoOl
+	padding-top: 19px
+
+#work 
+	width: 100%
+	height: 938px
+	margin-top: 148px
+	background: #f9fafc
+
+.my-row
+	width: 100%
+	padding-left: 40px
+	
+.my-row div 
+	display: inline-block
+
+	
+.my-row .swiper-slide img 
+	margin: 20px
+	height: 215px
+	width: 248px
+	
+.owl-prev , .owl-next
+	color: #333
+	margin-right: 20px
+	font-size: 24px
+	
+.owl-nav
+	position: absolute
+	bottom: 31%
+	right: 16px
+
+.owl-nav button 
+	width: 48px
+	height: 48px
+
+.owl-dot
+	height: 2px 
+	width: 30px
+	background: #999
+	margin-right: 9px
+	&.active
+		background: #000
+
+.owl-dots
+	padding-left: 533px
+
+.environment
+	padding-top: 156px
+	float: left
+
+.environment h4
+	font-size: 38px
+	font-family: Montserrat-Regular
+
+.environment p 
+	font-size: 19px
+	font-family: Montserrat-Light
+
+.prevAndNext
+	float: right
+	padding-top: 190px
+	color: #333
+	font-size: 24px
+
+.prevSet
+	margin: 10px
+
+#contact
+	height: 424px
+	width: 100%
+	margin-top: 119px
+	h5
+		font-family: Montserrat-Regular
+		font-size: 38px
+		text-align: center
+		p
+		 font-family: OpenSans
+		 font-size: 16px
+
+.contact 
+	text-align: center
+	button 
+		width: 153px
+		height: 48px
+		text-transform: uppercase
+		background: #35cc62
+		font-size: 14px 
+		font-family: Montserrat-Medium
+		color: #fff
+		cursor: pointer
+		
+
+.get-started
+	text-align: center
+	background: #fff
+	
+
+.get-started button 
+	width: 161px
+	height: 48px
+	text-transform: uppercase
+	font-size: 14px
+	font-family: Montserrat-Medium
+	color: #333
+	background: #f9f9f9
+	transition: all ease-in-out .2s
+	cursor: pointer
+	&:hover
+		background: #35cc62
+	
+.get-started p 
+	text-align: center
+
+.line-get:after
+	content: " "
+	position: absolute
+	left: 100%
+	bottom: 60%
+	height: 86px
+	border-right: 2px solid #e5e5e5
+
+.second-line:after
+	content: " "
+	position: absolute
+	left: 100%
+	bottom: -10%
+	height: 86px
+	border-right: 2px solid #e5e5e5
+
+.alignPos
+	position: absolute
+	right: -11px
+	bottom: 43%
+	font-family: Montserrat-Medium
+	font-size: 14px
+	text-transform: uppercase
+	
+#gtcoFooter
+	width: 100%
+	height: 271px
+	background: #333
+
+
+.three-item
+	color: #fff
+	margin-top: 81px
+
+.creation  
+	font-size: 28px 
+	font-family: Montserrat-Medium
+	cursor: pointer
+
+
+.creationItem a 
+	text-decoration: none
+	color: #fff
+
+
+.creat-dot
+	color: #35cc62
+
+.footer-menu
+	margin-top: 11px
+	text-align: center
+	
+
+.footer-menu li 
+	list-style: none
+	display: inline-block
+	margin-right: 36px
+	text-transform: uppercase
+	cursor: pointer
+	font-size: 14px 
+	font-family: Montserrat-Medium
+	
+	
+.social 
+	margin-top: 90px
+
+.social li 
+	display: inline-block
+	list-style: none
+	margin-right: 18px
+	float: right
+
+.bottom 
+	color: #fff
+	border-top: 1px solid #fff
+	margin-top: 30px
+	padding-top: 38px
+	span 
+		float: left
+		font-family: Montserrat-Regular
+		font-size: 14px
+
+.privacy li 
+	float: right
+	list-style: none
+	padding-left: 34px
+	font-size: 14px
+	font-family: Montserrat-Medium
+@import "media" // Always at the end
