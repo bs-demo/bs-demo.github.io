@@ -43,6 +43,8 @@ b, strong
 	position: fixed
 	top: 0
 	width: 100%
+	display: block
+	transition: top 0.8s
 	z-index: 9999
 
 nav 
@@ -135,7 +137,7 @@ nav #menu li a:hover:after
 
 #toggle .span 
   height: 7px
-  background: #fe2f4d
+  background: $red
   margin: 5px auto
   backface-visibility: hidden
 
@@ -188,7 +190,7 @@ nav #menu li a:hover:after
 
 
 #resize #menu li:hover a 
-  color: #fe2f4d
+  color: $red
   transition: all 0.3s ease-out
 
 
@@ -230,12 +232,6 @@ nav #menu li a:hover:after
 	p 
 	 font-size: 30px
 	
-.headerWeDo::after
-	content: ' '
-	position: absolute
-	height: 2px
-	box-shadow: 0 32px 32px 0 rgba(0, 0, 0,.64)
-	width: 100%
 
 .mobile
 	margin: 40px 0 40px 0
@@ -247,19 +243,34 @@ nav #menu li a:hover:after
 	margin-right: 50px
 
 .weDo i 
-	color: #fe2f4d
+	color: $red
 
 .mobile i 
-	color: #fe2f4d
+	color: $red
 	padding-right: 10px
 	font-size: 20px
 
 
 #aboutAs
-	margin-top: 100px
+	padding-top: 100px
 	color: #fff
+	height: 611px
+	background: url(../img/septik.jpg) no-repeat center center
+	-webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  width: 100%
 	h2
 		font-size: 40px
+		color: #fff
+
+.about-pharag
+	width: 60%
+	font-size: 20px
+	padding-left: 20px
+	color: #fff
+
 
 #three-service
 	background: #fff
@@ -339,6 +350,7 @@ nav #menu li a:hover:after
 .plan 
 	background: radial-gradient(ellipse at top,hsla(0,50%,68%,.15) 0,hsla(0,50%,68%,0) 100%) , url(../img/header-img.png)
 	margin-bottom: 98px
+	height: 440px
 	li
 	 list-style-type: none
 	 padding: 10px 0
@@ -394,6 +406,6 @@ footer
 	border-left: solid 1px #999
 	i 
 	 padding-right: 8px
-	 color: #fe2f4d
+	 color: $red
 
 @import "media" // Always at the end
